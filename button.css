@@ -1,0 +1,39 @@
+nav {
+		font-family: Helvetica;
+		text-align: center;
+		box-sizing: border-box;
+		float:right;
+		padding-top:35px;
+		width:75%;
+	}
+	
+nav a {
+	color:gray;
+	background-color:white;
+	font-weight: bold;
+	margin:0px;
+	padding:50px 25px;
+	text-decoration:none;
+	font-size:20px;
+	text-align:center;
+  }
+ 
+nav a:hover {
+			color:white;
+			background-color:red;
+			
+		 }
+
+div {
+	 width:25%;
+	 float:left;
+	 text-align:center;
+	}
+
+div a{
+	  color:gray;
+	  text-decoration:none;
+	  font-family:Helvetica;
+	  
+	  
+	 }
