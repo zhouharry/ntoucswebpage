@@ -1,0 +1,32 @@
+ul.topButton{
+    list-style-type: none;
+    opacity: 0.8;
+    margin: 0px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+ul.topButton li {
+    float: left;
+}
+
+ul.topButton li a {
+	border-radius: 10px;
+    display: block;
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 30px;
+    text-decoration: none;
+}
+
+ul.topButton li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
