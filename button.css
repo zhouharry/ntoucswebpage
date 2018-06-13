@@ -12,26 +12,6 @@ ul.topButton li {
     float: left;
 }
 
-<<<<<<< HEAD
-div a{
-	  color:gray;
-	  text-decoration:none;
-	  font-family:Helvetica;
-	  
-	  
-	 }
-	 
-.page{
-		width:100%;
-		height:100%;
-		text-align:center;
-	 }
-	
-div p{
-		margin:auto;
-		font-size:500px;
-	 }
-=======
 ul.topButton li a {
 	border-radius: 10px;
     display: block;
@@ -50,4 +30,3 @@ ul.topButton li a:hover:not(.active) {
 .active {
     background-color: #4CAF50;
 }
->>>>>>> d841d397dc54ec274e0414208167e5a2f6e72c74
