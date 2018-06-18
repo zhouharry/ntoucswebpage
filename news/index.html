@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Index</title>
+		<meta charset = "utf-8"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$(function(){
+				for(let i = 1; i < 5; i++)
+					document.getElementById("changeImage" + i).addEventListener("mouseenter", function(){
+						let path = "../img/" + i +".jpg";
+						$(".parallax").animate({opacity: '0'}, 500, function(){
+							$(".parallax").css({"background-image": 'url(' + path + ')'});
+						});
+						$(".parallax").animate({opacity: '1'}, 500, function(){
+							$(".parallax").clearQueue();
+						});
+					});
+			});
+		</script>		
+		<link rel = "stylesheet" type = "text/css" href = "../button.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<style>
+
+			body {
+				background-color: #888888;
+			}
+			
+			a
+			{
+				color: #666666;
+				text-decoration: none;
+			}
+
+			.applet {
+				position: absolute;
+				top: 69%;
+				border-radius: 30px;
+				width: 30%;
+				height: 350px;
+				margin: auto;
+				margin-top: 10%;
+				background-attachment: fixed;
+    			background-position: center;
+    			background-repeat: no-repeat;
+				background-size: cover;
+				font-family: 'Lato';
+			}
+
+			#applet-title {
+				color: #fff;
+				text-align: center;
+				padding: 16%;
+
+			}
+
+			.applet-content
+			{
+				color: 	#AAAAAA;
+			}
+
+			.parallax {
+				background-image: url("../img/1.jpg");
+    			background-attachment: fixed;
+    			background-position: center;
+    			background-repeat: no-repeat;
+    			background-size: cover;
+
+    			margin: 20px;
+				top: 0px;
+				left: 0px;
+				position: absolute;
+ 				height: 700px;
+  				width: 100%;
+  				border: 0px solid black;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="parallax"></div>
+			<ul class = "topButton">
+  				<li style="width: 200px;margin-right: 200px"><a class = "active" href = "../index.html">首頁</a></li>
+  				<li id = "changeImage1"><a href = "../playerIntro/index.html">著名球員介紹</a></li>
+  				<li id = "changeImage2"><a href = "#contact">新聞</a></li>
+  				<li id = "changeImage3"><a href = "../global/global.html">賽事地圖</a></li>
+  				<li id = "changeImage4"><a href = "#about">國際重大賽事</a></li>
+  				<li style="float:right"><a class="active" href="#about">About</a></li>
+			</ul>
+		</div>
+
+		<div class="applet" style = "left: 30px; background: url(./img/n1.png)">
+			<h1 id="applet-title"><a href = "http://www.cna.com.tw/news/firstnews/201804295005-1.aspx">戴資穎衛冕亞錦賽 重回球后寶座</a></h1>
+			<div class="applet-content">
+				<p>（中央社台北29日綜合報導）台灣羽球名將戴資穎今天在亞洲羽球錦標賽女單決賽中，以21比19、22比20擊敗中國大陸的陳雨菲。戴資穎這次比賽一局未失奪冠，在下週公布最新的世界排名中，將重登球后寶座。</p>
+			</div>
+		</div>
+
+		<div class="applet" style = "left: 35%; background: url(./img/n2.png)">
+			<h1 id="applet-title"><a href = "http://www.cna.com.tw/news/aspt/201805260212-1.aspx">優霸盃羽球賽 山口茜率日本奪冠</a></h1>
+			<div class="applet-content">
+				<p>（中央社記者劉得倉曼谷26日專電）在泰國曼谷舉行的2018湯優盃羽球賽，女子團體的優霸盃，今天由日本與泰國爭冠。日本女單山口茜擊退泰國拉差諾，搶下首點後，日本選手又連下二城，終場3比0獲優霸盃冠軍。</p>
+			</div>
+		</div>
+
+		<div class="applet" style = "left: 68%; background: url(./img/n3.png)">
+			<h1 id="applet-title"><a href = "http://www.cna.com.tw/news/aspt/201804290197-1.aspx">亞洲羽球錦標賽 桃田賢斗技驚諶龍奪冠</a></h1>
+			<div class="applet-content">
+				<p>（中央社上海29日綜合外電報導）日本羽球好手桃田賢斗今天技驚中國奧運金牌勇將諶龍，在亞洲錦標賽男單決賽以21比17和21比13獲勝奪冠。</p>
+			</div>
+		</div>
+
+		<div class="applet" style = "top : 930px; left: 30px; background: url(./img/n4.png)">
+			<h1 id="applet-title"><a href = "https://hk.sports.appledaily.com/sports/daily/article/20180615/20421316">林丹美國賽首圈出局</a></h1>
+			<div class="applet-content">
+				<p>周三舉行的美國羽毛球公開賽，中國頭號種籽林丹（圖）在男單首圈面對南韓的李東根先輸一盤13:21，第二盤落後至12:19時，更宣佈提前退賽，首圈出局</p>
+			</div>
+		</div>
+
+		<div class="applet" style = "top : 930px; left: 35%; background: url(./img/n5.png)">
+			<h1 id="applet-title"><a href = "http://www.cna.com.tw/news/aspt/201805200003-1.aspx">BWF投票結果 維持3局21分制</a></h1>
+			<div class="applet-content">
+				<p>日前傳出世羽聯（BWF）將把賽制由3局、21分制，改成5局、11分制，但在今天投票後，因為贊成改制的票數未達2/3，因此比賽將維持3局21分制</p>
+			</div>
+		</div>
+
+		<div class="applet" style = "top : 930px; left: 68%; background: url(./img/n6.png)">
+			<h1 id="applet-title"><a href = "http://www.chinatimes.com/realtimenews/20180611002430-260405">全國羽球排名賽報名創紀錄</a></h1>
+			<div class="applet-content">
+				<p>受球后戴資穎屢屢在全球羽球賽奪冠激勵，107年第二次全國羽球排名賽11日盛大在台中市中興大學體育館開戰，共吸引甲乙組共1700人參賽，達排名賽歷史新高</p>
+			</div>
+		</div>
+		
+	</body>
+</html>		

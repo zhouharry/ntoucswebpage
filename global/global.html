@@ -1,0 +1,65 @@
+
+<meta charset = "utf-8"/>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/ammap.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src = "global.js"></script>
+<script>
+	$(function(){
+		for(let i = 1; i < 5; i++)
+			document.getElementById("changeImage" + i).addEventListener("mouseenter", function(){
+				let path = "../img/" + i +".jpg";
+				$(".parallax").animate({opacity: '0'}, 500, function(){
+					$(".parallax").css({"background-image": 'url(' + path + ')'});
+				});
+				$(".parallax").animate({opacity: '1'}, 500, function(){
+					$(".parallax").clearQueue();
+				});
+			});
+	});
+</script>		
+<link rel = "stylesheet" type = "text/css" href = "../button.css">
+<style>
+
+	body {
+		background-color: #888888;
+	}
+	#mapdiv {
+		margin-left: 10px;
+  		background: #eee;
+  		width: 100%; 
+  		height: 90%;
+  		position: absolute;
+  		top: 90%;
+	}
+	.parallax {
+			background-image: url("../img/1.jpg");
+    		background-attachment: fixed;
+    		background-position: center;
+    		background-repeat: no-repeat;
+    		background-size: cover;
+
+			margin: 20px;
+			top: 0px;
+			left: 0px;
+			position: absolute;
+ 			height: 700px;
+  			width: 100%;
+  			border: 0px solid black;
+	}
+</style>
+<div>
+	<div class="parallax"></div>
+
+	<ul class = "topButton">
+  		<li style="width: 200px;margin-right: 200px"><a class = "active" href = "../index.html">首頁</a></li>
+  		<li id = "changeImage1"><a href = "../playerIntro/index.html">著名球員介紹</a></li>
+  		<li id = "changeImage2"><a href = "../news/index.html">新聞</a></li>
+  		<li id = "changeImage3"><a href = "#Map">賽事地圖</a></li>
+  		<li id = "changeImage4"><a href = "#about">國際重大賽事</a></li>
+  		<li style="float:right"><a class="active" href="#about">About</a></li>
+	</ul>
+			
+</div>
+<div id="mapdiv"></div>
