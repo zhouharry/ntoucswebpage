@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Index</title>
+		<meta charset = "utf-8"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$(function(){
+				for(let i = 1; i < 5; i++)
+					document.getElementById("changeImage" + i).addEventListener("mouseenter", function(){
+						let path = "../img/" + i +".jpg";
+						$(".parallax").animate({opacity: '0'}, 500, function(){
+							$(".parallax").css({"background-image": 'url(' + path + ')'});
+						});
+						$(".parallax").animate({opacity: '1'}, 500, function(){
+							$(".parallax").clearQueue();
+						});
+					});
+				$(".col-6").mouseenter(function(){
+					$(this).css("background-color", "#666666");
+				});
+				$(".col-6").mouseleave(function(){
+					$(this).css("background-color", "#888888");
+				});
+			});
+		</script>	
+		<link rel = "stylesheet" type = "text/css" href = "index.css">	
+		<link rel = "stylesheet" type = "text/css" href = "../button.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<style>
+
+			body {
+				background-color: #888888;
+			}
+			
+
+			.parallax {
+				background-image: url("../img/1.jpg");
+    			background-attachment: fixed;
+    			background-position: center;
+    			background-repeat: no-repeat;
+    			background-size: cover;
+
+    			margin: 20px;
+				top: 0px;
+				left: 0px;
+				position: absolute;
+ 				height: 700px;
+  				width: 100%;
+  				border: 0px solid black;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="parallax"></div>
+			<ul class = "topButton">
+  				<li style="width: 200px;margin-right: 200px"><a class = "active" href = "../index.html">首頁</a></li>
+  				<li id = "changeImage1"><a href = "../playerIntro/index.html">著名球員介紹</a></li>
+  				<li id = "changeImage2"><a href = "../news/index.html">新聞</a></li>
+  				<li id = "changeImage3"><a href = "../global/global.html">賽事地圖</a></li>
+  				<li id = "changeImage4"><a href = "#about">國際重大賽事</a></li>
+  				<li style="float:right"><a class="active" href="#about">About</a></li>
+			</ul>
+		</div>
+
+		<section id="courses">
+  			<div class="container">
+    			<div class="services-title">
+      				<h1 class="mb-2">2018 World Tour Calendar</h1>
+    			</div>
+    			<div class="services-pic">
+      				<div class="row">
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3139/princess-sirivannavari-thailand-masters-2018/results/podium/">
+          						<figure>
+            						<img src = "./img/1.png" alt="">
+            						<figcaption>
+              							<h3 class="text-white a">PRINCESS SIRIVANNAVARI THAILAND MASTERS 2018</h3>
+              							<p>
+              								09 - 14 JANUARY<br>
+											BANGKOK, THAILAND<br>
+											PRIZE MONEY USD 150,000<br>
+              							</p>
+            						</figcaption>
+          						</figure>
+          					</a>
+        				</div>
+        
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3143/perodua-malaysia-masters-2018/results/podium/">
+          						<figure>
+            						<img src = "./img/2.png" alt="">
+            						<figcaption>
+              							<h3 class="text-white a">PERODUA MALAYSIA MASTERS 2018</h3>
+              							<p>
+              								16 - 21 JANUARY<br>
+											AXIATA ARENA, BUKIT JALIL, MALAYSIA<br>
+											PRIZE MONEY USD 350,000<br>
+              							</p>
+            						</figcaption>
+          						</figure>
+          					</a>
+        				</div>
+
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3140/daihatsu-indonesia-masters-2018/results/podium/">
+          						<figure>
+            						<img src = "./img/3.png" alt="">
+            						<figcaption>
+              							<h3 class="text-white a">DAIHATSU INDONESIA MASTERS 2018</h3>
+              							<p>
+              								23 - 28 JANUARY<br>
+											ISTORA SENAYAN , JAKARTA, INDONESIA<br>
+											PRIZE MONEY USD 350,000<br>
+              							</p>
+            						</figcaption>
+          						</figure>
+          					</a>
+        				</div>        
+ 
+         				<div class="col-6 col-md-6">
+         					<a href = "http://bwfworldtour.com/tournament/3170/yonex-sunrise-dr-akhilesh-das-gupta-india-open-2018/results/podium/">
+          					<figure>
+            					<img src = "./img/4.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">YONEX-SUNRISE DR. AKHILESH DAS GUPTA INDIA OPEN 2018</h3>
+              						<p>
+              							30 JANUARY - 04 FEBRUARY<br>
+										SIRI FORT INDOOR STADIUM, NEW DELHI, INDIA<br>
+										PRIZE MONEY USD 350,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>
+        
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3144/yonex-swiss-open-2018/results/podium/">
+          					<figure>
+            					<img src = "./img/5.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">YONEX SWISS OPEN 2018</h3>
+              						<p>
+              							20 - 25 FEBRUARY<br>
+										ST. JAKOBSHALLE, BASEL, SWITZERLAND<br>
+										PRIZE MONEY USD 150,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>   
+        
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3146/yonex-german-open-2018/results/podium/">
+          					<figure>
+            					<img src = "./img/6.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">YONEX GERMAN OPEN 2018</h3>
+              						<p>
+              							06 - 11 MARCH<br>
+										INNOGY SPORTHALLE, MÜLHEIM AN DER RUHR, GERMANY<br>
+										PRIZE MONEY USD 150,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>
+
+        				<div class="col-6 col-md-6">
+        					<a href= "http://bwfworldtour.com/tournament/3141/yonex-all-england-open-2018/results/podium/">
+          					<figure>
+            					<img src = "./img/7.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">YONEX ALL ENGLAND OPEN 2018</h3>
+              						<p>
+              							14 - 18 MARCH<br>
+										ARENA BIRMINGHAM, BIRMINGHAM, ENGLAND<br>
+										PRIZE MONEY USD 1,000,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>   
+
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3147/barfoot-thompson-new-zealand-open-2018/results/podium/">
+          					<figure>
+            					<img src = "./img/8.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">BARFOOT & THOMPSON NEW ZEALAND OPEN 2018</h3>
+              						<p>
+              							01 - 06 MAY<br>
+										NORTH SHORE EVENTS CENTRE, AUCKLAND, NEW ZEALAND<br>
+										PRIZE MONEY USD 150,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>   
+
+        				<div class="col-6 col-md-6">
+        					<a = href = "http://bwfworldtour.com/tournament/3148/crown-group-australian-open-2018/results/podium/">
+          					<figure>
+            					<img src = "./img/9.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">CROWN GROUP AUSTRALIAN OPEN 2018</h3>
+              						<p>
+              							08 - 13 MAY<br>
+										QUAYCENTRE, SYDNEY, AUSTRALIA<br>
+										PRIZE MONEY USD 150,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>   
+
+        				<div class="col-6 col-md-6">
+        					<a = href = "http://bwfworldtour.com/tournament/3216/2018-yonex-us-open/results/podium/">
+          					<figure>
+            					<img src = "./img/10.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">2018 YONEX US OPEN</h3>
+              						<p>
+              							12 - 17 JUNE<br>
+										FULLERTON TITAN GYM, FULLERTON, U.S.A.<br>
+										PRIZE MONEY USD 150,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>   
+
+        				<div class="col-6 col-md-6">
+							<a href = "http://bwfworldtour.com/tournament/3142/celcom-axiata-malaysia-open-2018/results/draw/ms">          					
+								<figure>
+            						<img src = "./img/11.png" alt="">
+            						<figcaption>
+              							<h3 class="text-white a">CELCOM AXIATA MALAYSIA OPEN 2018</h3>
+              							<p>
+              								26 JUNE - 01 JULY<br>
+											KUALA LUMPUR, MALAYSIA<br>
+											PRIZE MONEY USD 700,000<br>
+              							</p>
+            						</figcaption>
+          						</figure>
+          					</a>
+        				</div>   
+
+        				<div class="col-6 col-md-6">
+        					
+        					<a href = "http://bwfworldtour.com/tournament/3149/blibli-indonesia-open-2018/results/draw/ms">
+          					<figure>
+            					<img src = "./img/12.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">BLIBLI INDONESIA OPEN 2018</h3>
+              						<p>
+              							03 - 08 JULY<br>
+										ISTORA GELORA BUNG KARNO, JAKARTA, INDONESIA<br>
+										PRIZE MONEY USD 1,250,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>   
+
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3150/toyota-thailand-open-2018/overview/">
+          					<figure>
+            					<img src = "./img/13.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">TOYOTA THAILAND OPEN 2018</h3>
+              						<p>
+              							10 - 15 JULY<br>
+										BANGKOK, THAILAND<br>
+										PRIZE MONEY USD 350,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          				</a>
+        				</div>   
+
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3151/singapore-open-2018/overview/">
+          					<figure>
+            					<img src = "./img/14.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">SINGAPORE OPEN 2018</h3>
+              						<p>
+              							17 - 22 JULY<br>
+										SINGAPORE INDOOR STADIUM (SIS), SINGAPORE, SINGAPORE<br>
+										PRIZE MONEY USD 355,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>   
+
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3145/spanish-open-2018/overview/">
+          					<figure>
+            					<img src = "./img/15.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">SPANISH OPEN 2018</h3>
+              						<p>
+              							28 AUGUST - 02 SEPTEMBER<br>
+										TBC, SPAIN<br>
+										PRIZE MONEY USD 150,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>   
+
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3152/daihatsu-yonex-japan-open-2018/overview/">
+          					<figure>
+            					<img src = "./img/16.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">DAIHATSU YONEX JAPAN OPEN 2018</h3>
+              						<p>
+              							11 - 16 SEPTEMBER<br>
+										MUSASHINO FOREST SPORT PLAZA, TOKYO, JAPAN<br>
+										PRIZE MONEY USD 700,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>   
+
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3153/victor-china-open-2018/overview/">
+          					<figure>
+            					<img src = "./img/17.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">VICTOR CHINA OPEN 2018</h3>
+              						<p>
+              							18 - 23 SEPTEMBER<br>
+										OLYMPIC SPORTS CENTER XINCHENG GYMNASIUM, CHANGZHOU, CHINA<br>
+										PRIZE MONEY USD 1,000,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>
+
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3154/victor-korea-open-2018/overview/">
+          					<figure>
+            					<img src = "./img/18.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">VICTOR KOREA OPEN 2018</h3>
+              						<p>
+              							25 - 30 SEPTEMBER<br>
+										SK HANDBALL STADIUM, SEOUL, KOREA<br>
+										PRIZE MONEY USD 600,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>
+
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3155/chinese-taipei-open-2018/overview/">
+          					<figure>
+            					<img src = "./img/19.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">CHINESE TAIPEI OPEN 2018</h3>
+              						<p>
+              							02 - 07 OCTOBER<br>
+										TAIPEI CITY, CHINESE TAIPEI<br>
+										PRIZE MONEY USD 200,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>
+
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3156/danisa-denmark-open-2018/overview/">
+          					<figure>
+            					<img src = "./img/20.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">DANISA DENMARK OPEN 2018</h3>
+              						<p>
+              							16 - 21 OCTOBER<br>
+										ODENSE, DENMARK<br>
+										PRIZE MONEY USD 775,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>
+
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3157/yonex-french-open-2018/overview/">
+          					<figure>
+            					<img src = "./img/21.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">YONEX FRENCH OPEN 2018</h3>
+              						<p>
+              							23 - 28 OCTOBER<br>
+										STADE PIERRE DE COUBERTIN, PARIS, FRANCE<br>
+										PRIZE MONEY USD 150,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>
+
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3158/macau-open-2018/overview/">
+          					<figure>
+            					<img src = "./img/22.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">MACAU OPEN 2018</h3>
+              						<p>
+              							30 OCTOBER - 04 NOVEMBER<br>
+										MACAU CITY, MACAU<br>
+										PRIZE MONEY USD 150,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>
+
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3159/fuzhou-china-open-2018/overview/">
+          					<figure>
+            					<img src = "./img/23.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">FUZHOU CHINA OPEN 2018</h3>
+              						<p>
+              							06 - 11 NOVEMBER<br>
+										FUZHOU, CHINA<br>
+										PRIZE MONEY USD 700,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>
+
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3337/yonex-sunrise-hong-kong-open-2018/overview/">
+          					<figure>
+            					<img src = "./img/24.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">YONEX-SUNRISE HONG KONG OPEN 2018</h3>
+              						<p>
+              							13 - 18 NOVEMBER<br>
+										HONG KONG COLISEUM, KOWLOON, HONG KONG<br>
+										PRIZE MONEY USD 400,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>
+
+
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3171/syed-modi-international-badminton-championships-2018/overview/">
+          					<figure>
+            					<img src = "./img/25.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">SYED MODI INTERNATIONAL BADMINTON CHAMPIONSHIPS 2018</h3>
+              						<p>
+              							20 - 25 NOVEMBER<br>
+										LUCKNOW, INDIA<br>
+										PRIZE MONEY USD 150,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>
+
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3161/korea-masters-2018/overview/">
+          					<figure>
+            					<img src = "./img/26.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">KOREA MASTERS 2018</h3>
+              						<p>
+              							27 NOVEMBER - 02 DECEMBER<br>
+										KWANGJU, KOREA<br>
+										PRIZE MONEY USD 250,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>
+
+        				<div class="col-6 col-md-6">
+        					<a href = "http://bwfworldtour.com/tournament/3317/hsbc-bwf-world-tour-finals-2018/overview/">
+          					<figure>
+            					<img src = "./img/27.png" alt="">
+            					<figcaption>
+              						<h3 class="text-white a">HSBC BWF WORLD TOUR FINALS 2018</h3>
+              						<p>
+              							12 - 16 DECEMBER<br>
+										GUANGZHOU, CHINA<br>
+										PRIZE MONEY USD 1,500,000<br>
+              						</p>
+            					</figcaption>
+          					</figure>
+          					</a>
+        				</div>
+
+      				</div>
+    			</div>
+  			</div>
+		</section>
+		
+
+		
+	</body>
+</html>		
