@@ -17,7 +17,14 @@
 						});
 					});
 			});
-		</script>		
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("window").scroll(function(){
+					$("#div1").fadeIn();
+				});
+			});
+		</script>
 		<link rel = "stylesheet" type = "text/css" href = "button.css">
 		<style>
 		body {
@@ -51,6 +58,12 @@
 					color:white;
 					box-sizing:border-box;
 				}
+		div a{
+				text-align:center;
+				text-decoration:none;
+				color:white;
+				font-size:10px;
+			 }
 		</style>
 	</head>
 	<body>
@@ -63,12 +76,12 @@
   				<li id = "changeImage2"><a href = "./news/index.html">新聞</a></li>
   				<li id = "changeImage3"><a href = "./global/global.html">賽事地圖</a></li>
   				<li id = "changeImage4"><a href = "./tournament/index.html">國際重大賽事</a></li>
-  				<li style="float:right"><a class="active" href="#about">About</a></li>
+  				<li style="float:right"><a class="active" href="about.html">About</a></li>
 			</ul>
 			
 		</div>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<div class = "contentTopix">
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<div id = "div1" class = "contentTopix">
 			歷 史
 		</div>
 		<hr>
@@ -99,6 +112,7 @@
 			<br>
 			1981年與成立於1978年的世界羽球聯盟合併，名稱仍為國際羽球總會。2006年9月24日，國際羽球總會改名為世界羽球聯盟，目前共有159個會員國或地區。
 		</div>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br>
+		<div class = "content"><a href = "report.pptx" style = "font-size:50px;">report.pptx</a></div>
 	</body>
 </html>
