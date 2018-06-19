@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#courses {
+    margin: 40px;
+    position: absolute;
+    top: 85%;
+}
+
+#courses h1 {
+    font-weight: 700 !important;
+    margin-bottom: 20px !important;
+    font-size: 45px !important;
+    line-height: 30px !important;
+    letter-spacing: normal !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    color: rgb(72, 72, 72) !important;
+}
+
+#courses h3 {
+    color: rgb(72, 72, 72);
+    font-weight: 600 !important;
+    word-wrap: break-word !important;
+    font-size: 20px !important;
+    line-height: 26px !important;
+    letter-spacing: normal !important;
+}
+.color-text {
+    color:rgb(165, 41, 3);
+    font-size:12px;
+    font-weight:700;
+    line-height:16px;
+    text-transform:uppercase;
+}
+
+.place-name {
+    color: rgb(72, 72, 72);
+    font-size:16px;
+    line-height:22px;
+    font-weight:700;  
+}
+
+.price {
+    font-size:14px;
+    line-height:18px;
+    color: rgb(72, 72, 72) !important;
+}
+
+img {
+/*   width:100%; */
+    border-radius:3px;
+}
+
+span {
+    display:block;
+}
+
+.checked {
+    color: rgb(0, 132, 137) !important;
+    font-size:9px;
+}
+.text-desc {
+    font-size:14px!important;
+}
+
+.text-color {
+    color:rgb(255, 180, 0)!important;
+    font-size:12px!important;
+}
+
+.rating {
+    font-size:12px;
+}
+
+figure {
+    position:relative;
+}
+
+figcaption.top {
+    max-width:400px;
+    position:absolute;
+    top:40px;
+    left:40px;
+}
+
+figcaption.button {
+    max-width:400px;
+    position:absolute;
+    top:120px;
+    left:40px;
+}
+
+.btn-bnb {
+    background-color:rgb(255,255,255);
+    color:rgb(72,72,72);
+    border-radius: 4px !important;
+    border-width: 2px !important;
+    border-style: solid !important;
+    border-color: transparent !important;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 4px 0px !important;
+    font-size: 16px !important;
+    line-height: 21px !important;
+    font-weight: 800 !important;
+    padding: 12px 24px;
+}
+
+figcaption.sign {
+    position:absolute;
+    bottom:40px;
+    left:40px;
+}
+
+figure img {
+    margin: 10px;
+    margin-bottom: 30px;
+    width:30%;
+    height: 30%;
+}
+
+.services-title {
+    max-width:700px;
+}
+
+figcaption {
+    position:absolute;
+    top:20%;
+    left:34%;
+    
+}
+
+figcaption h3 {
+    font-size:45px!important;
+}
+
+figcaption p {
+    color: #444444;
+    font-size: 20px;
+
+}
+
+.col-md-6 {
+    padding-left:8px;
+    padding-right:8px;
+}
